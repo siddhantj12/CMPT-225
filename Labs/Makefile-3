@@ -1,0 +1,21 @@
+# Makefile
+
+CXX = g++
+CXXFLAGS = -Wall -Wextra -std=c++17 -pedantic
+TARGET = measuringTimeAgain
+SRC = measuringTimeAgain.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
+
+# for Windows and PowerSehll
+clean:
+	del /Q $(TARGET).exe
+	@echo clean done
+
+# for Linux and MacOS
+remove:
+	rm -f $(TARGET)
+	@echo remove done
