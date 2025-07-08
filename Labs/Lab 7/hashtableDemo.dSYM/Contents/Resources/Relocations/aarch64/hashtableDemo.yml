@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/siddhant/Desktop/CMPT 225/Labs/Lab 7/hashtableDemo'
+relocations:     []
+...
